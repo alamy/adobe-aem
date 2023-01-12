@@ -1,0 +1,35 @@
+.buttomTemplate {
+    width: 50%;
+    margin-left: 53%;
+    margin-top: 30px;
+    left: 97px;
+    
+}
+
+.buttomTemplate a {
+    background: #333333;
+    font-family: 'Space Mono', monospace;
+    font-style: normal;
+    font-weight: 700;
+    color: #FFFFFF;
+    width: 216px;
+    height: 40px;
+    text-align: center;
+    padding-top: 20px;
+    display: block;
+    text-decoration: none;
+
+}
+
+@media (max-width: 600px){
+    .buttomTemplate {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0;
+        left: 0px;
+        
+    }
+    .buttomTemplate a {
+        margin: 0 auto;
+    }
+}

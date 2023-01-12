@@ -1,0 +1,7 @@
+4 obrigatoriedades p/ criar um componente REACT no AEM:
+
+1. Criar um componente no AEM + Dialog; Ok
+2. Criar o SlingModel para o componente; Ok
+3. Criar o componente React; Ok
+4. Importar o componente React para o arquivo "Import-components.js"; Ok
+

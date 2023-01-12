@@ -1,0 +1,8 @@
+{
+  "java.configuration.updateBuildConfiguration": "automatic",
+  "prettier.singleQuote": false,
+  "yaml.format.singleQuote": true,
+  "prettier.jsxSingleQuote": true,
+  "typescript.preferences.quoteStyle": "single",
+  "prettier.embeddedLanguageFormatting": "off"
+}

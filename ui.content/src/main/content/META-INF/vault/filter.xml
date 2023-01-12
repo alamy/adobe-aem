@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/reactapp" mode="merge"/>
+    <filter root="/content/reactapp" mode="merge"/>
+    <filter root="/content/dam/reactapp/asset.jpg" mode="merge"/>
+    <filter root="/content/experience-fragments/reactapp" mode="merge"/>
+</workspaceFilter>

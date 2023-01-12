@@ -1,0 +1,115 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    /* ---------- Maven All ---------- */
+    {
+      "label": "Build All",
+      "type": "shell",
+      "group": "build",
+      "presentation": {
+        "panel": "shared",
+        "clear": true
+      },
+      "command": "mvn clean install -PautoInstallSinglePackage",
+      "problemMatcher": []
+    },
+    /* ---------- Maven Core ---------- */
+    {
+      "label": "Build core",
+      "type": "shell",
+      "group": "build",
+      "presentation": {
+        "panel": "shared",
+        "clear": true
+      },
+      "command": "cd core && mvn clean install -PautoInstallBundle",
+      "problemMatcher": []
+    },
+    /* ---------- Maven ui.apps ---------- */
+    {
+      "label": "Build ui.apps",
+      "type": "shell",
+      "group": "build",
+      "presentation": {
+        "panel": "shared",
+        "clear": true
+      },
+      "command": "cd ui.apps && mvn clean install -PautoInstallPackage",
+      "problemMatcher": []
+    },
+    /* ---------- Maven core & ui.apps ---------- */
+    {
+      "label": "Build core & ui.apps",
+      "type": "shell",
+      "group": "build",
+      "presentation": {
+        "panel": "shared",
+        "clear": true
+      },
+      "command": "cd core && mvn clean install -PautoInstallBundle; cd ../ui.apps && mvn clean install -PautoInstallPackage",
+      "problemMatcher": []
+    },
+    /* ---------- Maven ui.frontend && ui.apps ---------- */
+    {
+      "label": "Build ui.frontend && ui.apps",
+      "type": "shell",
+      "group": "build",
+      "presentation": {
+        "panel": "shared",
+        "clear": true
+      },
+      "command": "cd ui.frontend && mvn clean install -PautoInstallPackage && cd ../ui.apps && mvn clean install -PautoInstallPackage",
+      "problemMatcher": []
+    },
+    /* ---------- Maven Clean ---------- */
+    {
+      "label": "Clean Project",
+      "type": "shell",
+      "group": "build",
+      "presentation": {
+        "panel": "shared",
+        "clear": true
+      },
+      "command": "mvn clean",
+      "problemMatcher": []
+    },
+    /* ---------- Unit tests ---------- */
+    {
+      "label": "Run Tests",
+      "type": "shell",
+      "command": "cd ui.frontend && npm run test",
+      "group": "test",
+      "presentation": {
+        "panel": "new",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    /* ---------- Storybook ---------- */
+    {
+      "label": "Run Storybook",
+      "type": "shell",
+      "presentation": {
+        "panel": "new",
+        "reveal": "silent",
+        "clear": false
+      },
+      "command": "cd ui.frontend && npm run storybook",
+      "problemMatcher": []
+    },
+    /* ---------- Devserver ---------- */
+    {
+      "label": "Run Dev Server",
+      "type": "shell",
+      "presentation": {
+        "panel": "new",
+        "reveal": "silent",
+        "clear": true
+      },
+      "command": "cd ui.frontend && npm start",
+      "problemMatcher": []
+    }
+  ]
+}

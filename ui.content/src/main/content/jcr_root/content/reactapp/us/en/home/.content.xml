@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-06-28T14:28:27.696-03:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/reactapp/settings/wcm/templates/spa-page-template"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="React App Home Page"
+        sling:resourceType="reactapp/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <responsivegrid
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <xx_xxx
+                    jcr:created="{Date}2022-03-14T12:43:48.774-03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-14T12:44:52.185-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="reactapp/components/xx-xxx"
+                    checkbox="{Boolean}true"
+                    text="XXXXXXXXXXXXXXX"/>
+                <xx_xxx_1436178817
+                    jcr:created="{Date}2022-03-14T12:45:05.097-03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-14T12:51:28.216-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="reactapp/components/xx-xxx"
+                    checkbox="{Boolean}false"
+                    text="AAAAAAAAAAAAAAAA"/>
+                <xx_xxx_1212631023
+                    jcr:created="{Date}2022-03-14T12:51:34.461-03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-14T12:51:34.461-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="reactapp/components/xx-xxx"/>
+                <meu_componente
+                    jcr:created="{Date}2022-06-28T14:27:19.359-03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-06-28T14:28:27.694-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="reactapp/components/meu-componente"
+                    text="XXXXXXXXXXXXXXX"/>
+            </responsivegrid>
+        </root>
+    </jcr:content>
+</jcr:root>
