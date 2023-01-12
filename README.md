@@ -1,4 +1,4 @@
-# Esse Projeto tem como pricipio o estudo do Adobe AEM
+# Esse Projeto tem como objetivo o estudo do Adobe AEM
 
 Fiz esse projeto basico uma tela de 404 com multplipos componentes usando o gerador de component java.
 
