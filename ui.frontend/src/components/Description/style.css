@@ -1,0 +1,23 @@
+.decription {
+    width: 25%;
+    margin-left: 50%;
+    margin-top: -13%;
+
+ }
+ .decription p {
+    font-family: 'Space Mono', monospace;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 21px;
+    margin-left: 45px;
+ }
+
+ @media (max-width: 600px){
+   .decription {
+        left: 0;
+        top: 0;
+        margin-top: 0px;
+        margin-left: 0px;
+        width: 100%;
+    }
+}

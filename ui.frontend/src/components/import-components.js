@@ -20,6 +20,14 @@ import "./Container/Container";
 import "./ExperienceFragment/ExperienceFragment";
 import "./XxXxx";
 import MeuComponente from "./MeuComponente";
+import Header from "./Header";
+import Titulo from "./Titulo";
+import Description from "./Description";
+import Espantalho from "./Espantalho";
+import ButtomTemplate from "./ButtomTemplate";
+import Footer from "./Footer";
+
+
 
 import { MapTo } from "@adobe/aem-react-editable-components";
 
@@ -119,7 +127,39 @@ MapTo("reactapp/components/text")(LazyTextComponent, TextEditConfig);
 
 const authorAcessibility = { isEmpty: (props) => !props.any };
 
+
 MapTo("reactapp/components/meu-componente")(MeuComponente, {
   emptyLabel: "Meu Componente",
+  authorAcessibility,
+});
+
+
+MapTo("reactapp/components/header")(Header, {
+  emptyLabel: "Header",
+  authorAcessibility,
+});
+
+MapTo("reactapp/components/titulo")(Titulo, {
+  emptyLabel: "Titulo",
+  authorAcessibility,
+});
+
+MapTo("reactapp/components/description")(Description, {
+  emptyLabel: "Description",
+  authorAcessibility,
+});
+
+MapTo("reactapp/components/espantalho")(Espantalho, {
+  emptyLabel: "Espantalho",
+  authorAcessibility,
+});
+
+MapTo("reactapp/components/buttom-template")(ButtomTemplate, {
+  emptyLabel: "ButtomTemplate",
+  authorAcessibility,
+});
+
+MapTo("reactapp/components/footer")(Footer, {
+  emptyLabel: "Footer",
   authorAcessibility,
 });

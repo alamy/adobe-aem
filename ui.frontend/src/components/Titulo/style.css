@@ -1,0 +1,34 @@
+.titulo {
+    margin-top: -29%;
+    left: 77px;
+    top: 0;
+    width: 50%;
+    margin-left: 50%;
+}
+.titulo p {
+    font-size: 54px;
+    font-weight: 800;
+    width: 60%;
+    font-family: 'Space Mono', monospace;
+    margin-left: 35px;
+    color: #333333;
+}
+
+@media (max-width: 600px){
+    .titulo {
+         left: 0;
+         top: 0;
+         width: 100%;
+         margin-top: 80px;
+         margin-left: 0%;
+     }
+
+     .titulo p {
+        font-size: 34px;
+        font-weight: 800;
+        width: 100%;
+        font-family: 'Space Mono', monospace;
+        margin-left: 35px;
+        color: #333333;
+    }
+}

@@ -1,0 +1,19 @@
+.image {
+   width: 50%;
+   display: inline-block;
+}
+
+.image img{
+    width: 80%;
+}
+
+@media (max-width: 600px){ 
+    .image {
+        width: 100%;
+        display: block;
+     }
+     
+     .image img{
+         width: 100%;
+     }
+}
