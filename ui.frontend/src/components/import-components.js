@@ -26,6 +26,7 @@ import Description from "./Description";
 import Espantalho from "./Espantalho";
 import ButtomTemplate from "./ButtomTemplate";
 import Footer from "./Footer";
+import FormCompass from "./FormCompass";
 
 
 import { MapTo } from "@adobe/aem-react-editable-components";
@@ -163,3 +164,7 @@ MapTo("reactapp/components/footer")(Footer, {
   authorAcessibility,
 });
 
+MapTo("reactapp/components/form-compass")(FormCompass, {
+  emptyLabel: "FormCompass",
+  authorAcessibility,
+});
