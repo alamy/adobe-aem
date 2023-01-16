@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,200;1,300;1,400;1,700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.s6{
+    width: 50%;
+    float: left;
+    font-family: 'Poppins'!important;
+    display: block;
+    height: 100%;
+    top:0;
+}
+.LoginForm {
+    width: 100vw;
+    display: block;
+    height: 100vh;
+    max-height: 1210px;
+    top:-100;
+    background: linear-gradient(180deg, #33383D 0%, #1C1D20 100%);
+
+}
+.login-form h1 {
+    font-family: 'Poppins'!important;
+    font-size: 2.3em;
+    font-weight: 300;
+    color:#fff;
+    margin-left: 25%;
+    margin-top: 15%;
+}
+.login-form p {
+    font-family: 'Poppins'!important;
+    font-size: 1.0em;
+    color:#fff;
+    font-weight: 100;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 55px;
+}
+.laptop {
+    background: url('img/bg.jpg') no-repeat;
+    background-size: cover;
+    top:0;
+}
+
+.logo {
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.formulario {
+    width: 50%;
+    margin: 0px 25%;
+}
+input[type='text'] {
+    width: 100%;
+    height: 30px;
+    padding-top: 5px;
+    border-radius: 20px;
+    margin: 0px 0;
+    padding-left: 20px;
+    border: none;
+    border: 1px solid #fff;
+    color:#fff;
+    background-color: rgba(255,255,255, 0.0);
+}
+
+input[type='password'] {
+    width: 100%;
+    height: 30px;
+    padding-top: 5px;
+    margin: 10px 0;
+    border-radius: 20px;
+    padding-left: 20px;
+    border: 1px solid #fff;
+    color:#fff;
+    background-color: rgba(255,255,255, 0.0);
+}
+.formulario h3 {
+    font-family: 'Poppins'!important;
+    font-size: 1.7em;
+    color:#fff;
+    font-weight: 300;
+}
+.enviar {
+    width: 100%;
+    height: 45px;
+    padding-left: 20px;
+    background: linear-gradient(90deg, #FF2D04 0%, #C13216 100%);
+    box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 50px;
+    border: none;
+    text-align: center;
+    color:#fff;
+    cursor: pointer;
+}
+.formulario {
+    margin-top: 10%;
+}

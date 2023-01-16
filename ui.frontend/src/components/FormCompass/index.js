@@ -1,11 +1,19 @@
-import './style.css'
+import * as React from 'react';
+import './style.css';
 
 var title;
 var texto;
 var logo;
-const FormCompass = ({ text, titulo, logoCompass}) => {
+
+var name = " asda";
+var senha = " asda";
+
+
+
+const FormCompass = ({text, titulo, logoCompass}) => {
+   
   if(!text){
-    texto = 'Olá'
+    texto = 'Para continuar navegando de forma segura, efetue o login na rede.'
   }else {
     texto = text
   }
@@ -20,24 +28,28 @@ const FormCompass = ({ text, titulo, logoCompass}) => {
   }else {
     logo = logoCompass.src
   }
-  
+  const validarCampo = () => {
+    // name = document.getElementById('#name').value;
+    // senha = document.getElementById('#password').value;
+     console.log('estou aqui');
+   };
+
   return (
     <>
-    <div class="container">
-    <div class="row">
-      <div class="col s6">
+    <div class="LoginForm">
+      <div class="s6 login-form">
         <h1>{title}</h1>
         <p>{texto}</p>
-        <form>
-          <input type='text' name="user" placeholder='Insira seu nome' />
-          <input type='password' name="senha" placeholder='*******' />
-          <input type='submit' name='enviar' value="Continuar" />
-        </form>
+        <div class="formulario">
+          <h3>Login</h3>
+          <input type='text' name="user" placeholder='Insira seu nome' id="name" />
+          <input type='password' name="senha" placeholder='*******' id="password" />
+          <button class="enviar" id="enviar" onClick={validarCampo}>Continuar</button>
+        </div>
       </div>
-      <div class="col s6">
-          <img src={logo} alt="imagem" />
+      <div class="s6 laptop">
+          <img src={logo} alt="imagem" class="logo" />
       </div>
-    </div>
     </div>
     </>
   );
