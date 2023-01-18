@@ -1,0 +1,63 @@
+.bodyHome{
+    display: block;
+    width: 100%;
+    height: 100vh;
+    max-height: 1210px;
+    top:0;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    background: url('uol-ball-transparent.png') 0% 100% no-repeat;
+    font-family: 'Poppins'!important;
+}
+h1, h2, h3, p {
+    font-family: 'Poppins'!important;
+}
+ul{
+    margin: 0 auto;
+}
+ul li {
+    float: left;
+    list-style: none;
+    border:1px solid yellow;
+    width: 32%;
+    margin-left: 0%;
+    display: block;
+}
+
+.header {
+    height: 20%;
+    border:1px solid red;
+}
+.hora {
+    text-align: center;
+}
+.localidade {
+    text-align: right;
+}
+.logo image {
+    width: 50%;
+    margin: 0 auto;
+}
+.footerHome {
+    height: 100px;
+    bottom: -1px;
+    width: 100%;
+    position: absolute;
+    background: linear-gradient(90.16deg, #33383D 0%, #1C1D20 100%);
+}
+.bodyCompass {
+    text-align: right;
+}
+.bodyCompass h1{
+    color: #C12D18;
+    margin-right: 20px;
+}
+.bodyCompass h2 {
+    color: #C12D18;
+    margin-right: 20px;
+}
+.bodyCompass h3 {
+    color: #C12D18;
+    margin-right: 20px;
+}
