@@ -2,32 +2,22 @@ import * as React from 'react';
 import {useState} from 'react';
 import './style.css';
 import Validacao from './validar.json'; 
-//import  Estados from'./estados.json';
-//import  Municipios from'./municipios.json';
 
 var title;
 var texto;
 var logo;
 var x;
 var objeto = Validacao;
-function getLocation() {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showPosition);
-  } else { 
-    alert("Geolocation is not supported by this browser.");
-  }
-}
-
-function showPosition(position) {
-  
-  // for(var e; e < Estados.length; e++){
- //   if(position.coords.latitude ===)
- // }
-  x = "Latitude: " + position.coords.latitude + 
-  "<br />Longitude: " + position.coords.longitude;
-}
+let validacaoError;
+function Redirecionar(){
+  console.log('estou aqui')
+  window.location.replace("http://localhost:4502/content/reactapp/us/en/home0.html");
+ }
 const FormCompass = ({text, titulo, logoCompass}) => {
-
+  sessionStorage.clear();
+  sessionStorage.setItem('user', '');
+  sessionStorage.setItem('pass', '');
+  localStorage.clear();
   let [name, setName] = useState('');
   let [senha, setSenha] = useState(''); 
   let [errorSenha, setErrorSenha] = useState('');
@@ -47,25 +37,51 @@ const FormCompass = ({text, titulo, logoCompass}) => {
     logo = logoCompass.src
   }
   const validarCampo = () => {
-    getLocation();
+    let labelSenha = document.getElementById("erroSenha");
+    let inputName = document.getElementById("name");
+    let inputSenha = document.getElementById("password");
     if(!name || !senha){
-      console.log('falta nome')
+      let mensagem = 'Ops, você esqueceu de preencher';
+      labelSenha.classList.add("yellow");
+      if(!name && senha){
+        mensagem = mensagem + ' nome';
+        labelSenha.classList.add("yellow");
+        inputName.classList.add("borderyellow");
+        inputSenha.classList.remove("borderyellow");
+      }else if(!senha && name){
+        mensagem = mensagem + ' senha';
+        labelSenha.classList.add("yellow");
+        inputSenha.classList.add("borderyellow");
+        inputName.classList.remove("borderyellow");
+      }else{
+        mensagem = mensagem + ' nome e senha'
+        inputName.classList.add("borderyellow");
+        inputSenha.classList.add("borderyellow");
+      }
+      setErrorSenha(mensagem);
     }else{
        for(let i = 0; i < objeto.length; i++){
           if(name !== objeto[i].name || senha !== objeto[i].senha){
             setErrorSenha('Ops, usuário ou senha inválidos. Tente novamente!');
-            var labelSenha = document.getElementById("erroSenha");
-            var inputName = document.getElementById("name");
-            var inputSenha = document.getElementById("password");
             labelSenha.classList.add("yellow");
             inputName.classList.add("borderyellow");
             inputSenha.classList.add("borderyellow");
+            validacaoError = true;
           }else{
-            console.log('logado')
-            setErrorSenha('');
+            if(validacaoError){
             labelSenha.classList.remove("yellow");
             inputName.classList.remove("borderyellow");
             inputSenha.classList.remove("borderyellow");
+            setErrorSenha('');
+            setName('');
+            }else{
+              validacaoError = false
+            }
+            console.log('estou no else');
+            console.log(validacaoError);
+            sessionStorage.setItem('user', name);
+            sessionStorage.setItem('pass', senha);
+            Redirecionar();
             break;
           } 
        }

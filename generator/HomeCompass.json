@@ -1,0 +1,104 @@
+{
+  "project-settings": {
+    "code-owner": "React App",
+    "bundle-path": "../core/src/main/java",
+    "test-path": "../core/src/test/java",
+    "apps-path": "../ui.apps/src/main/content/jcr_root/apps",
+    "component-path": "reactapp",
+    "model-interface-pkg": "com.reactapp.core.models",
+    "model-impl-pkg": "com.reactapp.core.models.impl"
+  },
+  "name": "home-compass",
+  "title": "HomeCompass",
+  "group": "React App - Content",
+  "type": "components",
+  "options": {
+    "js": false,
+    "jstxt": false,
+    "css": false,
+    "csstxt": false,
+    "html": false,
+    "html-content": false,
+    "slingmodel": true,
+    "testclass": false,
+    "junit-major-version": 5,
+    "content-exporter": true,
+    "model-adaptables": [
+      "request"
+    ],
+    "generic-javadoc": false,
+    "properties": [
+      {
+        "field": "logoHome",
+        "type": "image",
+        "label": "Imagem",
+        "json-expose": true,
+        "json-property": "logoHome"
+      },
+      {
+        "field": "titleOne",
+        "label": "description site",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "titleOne"
+      },
+      {
+        "field": "titleTwo",
+        "label": "description site",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "titleTwo"
+      },
+      {
+        "field": "titleThree",
+        "label": "description site",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "titleThree"
+      },
+      {
+        "field": "titleFour",
+        "label": "description site",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "titleFour"
+      },
+      {
+        "field": "desciptionOne",
+        "label": "Titulo do site",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "desciptionOne"
+      },
+      {
+        "field": "desciptionTwo",
+        "label": "Titulo do site",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "desciptionTwo"
+      },
+      {
+        "field": "desciptionThree",
+        "label": "Titulo do site",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "desciptionThree"
+      },
+      {
+        "field": "desciptionFour",
+        "label": "Titulo do site",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "desciptionFour"
+      },
+      {
+        "field": "textFooter",
+        "label": "Titulo do site",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "textFooter"
+      }
+      
+    ]
+  }
+}

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ |  ***********************************************************************
+ |  React App CONFIDENTIAL
+ |  ___________________
+ |
+ |  Copyright 2023 React App
+ |  All Rights Reserved.
+ |
+ |  NOTICE:  All information contained herein is, and remains the property
+ |  of React App and its suppliers, if any. The intellectual and
+ |  technical concepts contained herein are proprietary to React App
+ |  and its suppliers and are protected by trade secret or copyright law.
+ |  Dissemination of this information or reproduction of this material
+ |  is strictly forbidden unless prior written permission is obtained
+ |  from React App.
+ |  ***********************************************************************
+-->
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="HomeCompass"
+          sling:resourceType="cq/gui/components/authoring/dialog">
+   <content jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/container">
+      <layout jcr:primaryType="nt:unstructured"
+              margin="{Boolean}false"
+              sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+      <items jcr:primaryType="nt:unstructured">
+         <column jcr:primaryType="nt:unstructured"
+                 sling:resourceType="granite/ui/components/coral/foundation/container">
+            <items jcr:primaryType="nt:unstructured">
+               <logoHomeResType jcr:primaryType="nt:unstructured"
+                                name="./logoHome/sling:resourceType"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                value="core/wcm/components/image/v2/image"/>
+               <logoHome allowUpload="{Boolean}false"
+                         autoStart="{Boolean}false"
+                         class="cq-droptarget"
+                         cq-msm-lockable="./logoHome/file"
+                         fieldLabel="Imagem"
+                         fileNameParameter="./logoHome/fileName"
+                         fileReferenceParameter="./logoHome/fileReference"
+                         jcr:primaryType="nt:unstructured"
+                         mimeTypes="[image/gif,image/jpeg,image/png,image/webp,image/tiff,image/svg+xml]"
+                         multiple="{Boolean}false"
+                         name="./logoHome/file"
+                         sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                         title="Drag to select image"
+                         uploadUrl="${suffix.path}"
+                         useHTML5="{Boolean}true"/>
+               <titleOne cq-msm-lockable="./titleOne"
+                         fieldLabel="description site"
+                         jcr:primaryType="nt:unstructured"
+                         name="./titleOne"
+                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <titleTwo cq-msm-lockable="./titleTwo"
+                         fieldLabel="description site"
+                         jcr:primaryType="nt:unstructured"
+                         name="./titleTwo"
+                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <titleThree cq-msm-lockable="./titleThree"
+                           fieldLabel="description site"
+                           jcr:primaryType="nt:unstructured"
+                           name="./titleThree"
+                           sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <titleFour cq-msm-lockable="./titleFour"
+                          fieldLabel="description site"
+                          jcr:primaryType="nt:unstructured"
+                          name="./titleFour"
+                          sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <desciptionOne cq-msm-lockable="./desciptionOne"
+                              fieldLabel="Titulo do site"
+                              jcr:primaryType="nt:unstructured"
+                              name="./desciptionOne"
+                              sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <desciptionTwo cq-msm-lockable="./desciptionTwo"
+                              fieldLabel="Titulo do site"
+                              jcr:primaryType="nt:unstructured"
+                              name="./desciptionTwo"
+                              sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <desciptionThree cq-msm-lockable="./desciptionThree"
+                                fieldLabel="Titulo do site"
+                                jcr:primaryType="nt:unstructured"
+                                name="./desciptionThree"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <desciptionFour cq-msm-lockable="./desciptionFour"
+                               fieldLabel="Titulo do site"
+                               jcr:primaryType="nt:unstructured"
+                               name="./desciptionFour"
+                               sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <textFooter cq-msm-lockable="./textFooter"
+                           fieldLabel="Titulo do site"
+                           jcr:primaryType="nt:unstructured"
+                           name="./textFooter"
+                           sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+            </items>
+         </column>
+      </items>
+   </content>
+</jcr:root>

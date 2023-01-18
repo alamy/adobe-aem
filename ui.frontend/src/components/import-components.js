@@ -27,6 +27,7 @@ import Espantalho from "./Espantalho";
 import ButtomTemplate from "./ButtomTemplate";
 import Footer from "./Footer";
 import FormCompass from "./FormCompass";
+import HomeCompass from "./HomeCompass";
 
 
 import { MapTo } from "@adobe/aem-react-editable-components";
@@ -166,5 +167,10 @@ MapTo("reactapp/components/footer")(Footer, {
 
 MapTo("reactapp/components/form-compass")(FormCompass, {
   emptyLabel: "FormCompass",
+  authorAcessibility,
+});
+
+MapTo("reactapp/components/home-compass")(HomeCompass, {
+  emptyLabel: "HomeCompass",
   authorAcessibility,
 });

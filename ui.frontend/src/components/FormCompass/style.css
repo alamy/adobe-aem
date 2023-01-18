@@ -122,3 +122,9 @@ svg {
     width: 70%;
     height: 70%;
 }
+
+@media (max-width: 600px){ 
+    .laptop{
+        display: none;
+    }
+}
