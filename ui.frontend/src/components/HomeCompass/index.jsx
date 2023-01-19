@@ -91,7 +91,7 @@ const getLocation = () => {
     Hora();
     lat =  position.coords.latitude;
     lon = position.coords.longitude;
-    googlemaps = "https://maps.googleapis.com/maps/api/geocode/json?latlng="+lat +","+ lon+"&key=AIzaSyB_8fXTTUr2koqUklfGRF8K4iGfKkpq_Rs";
+    googlemaps = "https://maps.googleapis.com/maps/api/geocode/json?latlng="+lat +","+ lon+"&key=";
     console.log(googlemaps)
     fetch(googlemaps, { method:"GET"})
         .then((response) => response.json())

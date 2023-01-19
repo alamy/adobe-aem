@@ -8,6 +8,7 @@
     margin: 0;
     padding: 0;
     background: url('uol-ball-transparent.png') 0% 100% no-repeat;
+    background-size: 30%;
     font-family: 'Poppins'!important;
 }
 h1, h2, h3, p {
@@ -86,7 +87,7 @@ ul li {
 }
 .timeout{
     float: left;
-    width: 30%;
+    width: 35%;
     height: 100px;
 }
 .timeout h1 {
@@ -114,8 +115,8 @@ ul li {
 .search {
     color: #fff;
     float: left;
-    height: 80px;
+    height: 70px;
     width: 7%;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 30px;
 }
