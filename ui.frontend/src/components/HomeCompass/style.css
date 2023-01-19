@@ -2,7 +2,7 @@
     display: block;
     width: 100%;
     height: 100vh;
-    max-height: 1210px;
+    max-height: 1010px;
     top:0;
     position: absolute;
     margin: 0;
@@ -19,7 +19,6 @@ ul{
 ul li {
     float: left;
     list-style: none;
-    border:1px solid yellow;
     width: 32%;
     margin-left: 0%;
     display: block;
@@ -27,7 +26,6 @@ ul li {
 
 .header {
     height: 20%;
-    border:1px solid red;
 }
 .hora {
     text-align: center;
@@ -51,13 +49,73 @@ ul li {
 }
 .bodyCompass h1{
     color: #C12D18;
-    margin-right: 20px;
+    margin-right: 2%;
+    font-size: 1.9em;
+    font-weight: 700;
 }
 .bodyCompass h2 {
     color: #C12D18;
-    margin-right: 20px;
+    margin-right: 2%;
+    font-size: 1.5em;
+    font-weight: 700;
 }
 .bodyCompass h3 {
     color: #C12D18;
-    margin-right: 20px;
+    margin-right: 2%;
+    font-size: 1.3em;
+    font-weight: 700;
+}
+.bodyCompass p {
+    margin-right: 2%;
+    display: block;
+}
+.descripitionFooter {
+    width: 30%;
+    height: 60px;
+    margin-left: 18%;
+    padding-right: 2%;
+    font-weight: 100;
+    margin-top: 20px;
+    border-right: 1px solid #fff;
+    float: left;
+}
+.descripitionFooter p {
+    color:#fff;
+    font-size: 0.8em;
+    margin-top: 15px;
+}
+.timeout{
+    float: left;
+    width: 30%;
+    height: 100px;
+}
+.timeout h1 {
+    font-size: 1.6em;
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+}
+.timeout p {
+    font-size: 1.0em;
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+}
+.logout {
+    float: left;
+    background: #fff;
+    border:1px solid #fff;
+    height: 80px;
+    width: 7%;
+    color:#C13216;
+    text-align: center;
+    padding-top: 20px;
+}
+.search {
+    color: #fff;
+    float: left;
+    height: 80px;
+    width: 7%;
+    text-align: center;
+    padding-top: 20px;
 }

@@ -91,7 +91,7 @@ const FormCompass = ({text, titulo, logoCompass}) => {
 
   return (
     <>
-    <div class="LoginForm">
+    <div class="LoginForm" alt="Aqui você vai fazer seu login" title='Aqui você vai fazer seu login'>
       {x}
       <div id="demo"></div>
       <div class="s6 login-form">
@@ -107,6 +107,7 @@ const FormCompass = ({text, titulo, logoCompass}) => {
               placeholder='Insira seu nome' 
               value={name}
               onChange={(e) => setName(e.target.value)}
+              alt="Digite seu usuario aqui" title='Digite seu usuario aqui'
           />
           <label for="user">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
@@ -126,6 +127,7 @@ const FormCompass = ({text, titulo, logoCompass}) => {
               id="senha"
               value={senha}
               onChange={(e) => setSenha(e.target.value)}
+              alt="Digite seu usuario aqui" title='Digite seu usuario aqui'
           />
           <label for="senha">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-lock">
@@ -138,12 +140,12 @@ const FormCompass = ({text, titulo, logoCompass}) => {
           </div>
           
           <div id="erroSenha">{errorSenha}</div>
-          <button class="enviar" id="enviar" onClick={validarCampo}>Continuar</button>
+          <button class="enviar" id="enviar" onClick={validarCampo} alt="Botão para entrar" title='Botão para entrar'>Continuar</button>
         </div>
 
       </div>
       <div class="s6 laptop">
-          <img src={logo} alt="imagem" class="logo" />
+          <img src={logo} class="logo"  alt="Logo da Compass.uol" title='Logo da Compass.uol'/>
       </div>
     </div>
     </>
