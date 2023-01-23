@@ -2,6 +2,7 @@ import * as React from 'react';
 import {useState} from 'react';
 import './style.css';
 import Validacao from './validar.json'; 
+import { useHistory } from "react-router-dom";
 
 var title;
 var texto;
@@ -9,11 +10,10 @@ var logo;
 var x;
 var objeto = Validacao;
 let validacaoError;
-function Redirecionar(){
-  console.log('estou aqui')
-  window.location.replace("http://localhost:4502/content/reactapp/us/en/home0.html");
- }
+
+
 const FormCompass = ({text, titulo, logoCompass}) => {
+  var history = useHistory();
   sessionStorage.clear();
   sessionStorage.setItem('user', '');
   sessionStorage.setItem('pass', '');
@@ -21,6 +21,10 @@ const FormCompass = ({text, titulo, logoCompass}) => {
   let [name, setName] = useState('');
   let [senha, setSenha] = useState(''); 
   let [errorSenha, setErrorSenha] = useState('');
+  function Redirecionar(){
+    console.log('estou aqui')
+    history.push("/content/reactapp/us/en/login/Home");
+   }
   if(!text){
     texto = 'Para continuar navegando de forma segura, efetue o login na rede.'
   }else {

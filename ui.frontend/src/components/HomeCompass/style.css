@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
 .bodyHome{
     display: block;
     width: 100%;
@@ -10,6 +11,7 @@
     background: url('uol-ball-transparent.png') 0% 100% no-repeat;
     background-size: 30%;
     font-family: 'Poppins'!important;
+    overflow: hidden;
 }
 h1, h2, h3, p {
     font-family: 'Poppins'!important;
@@ -28,8 +30,18 @@ ul li {
 .header {
     height: 20%;
 }
-.hora {
+.hora{
     text-align: center;
+}
+.hora h1 {
+    font-size: 6.9em;
+    font-weight: 700;
+    height: 122px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.hora  p {
+    margin-top: 0px;
 }
 .localidade {
     text-align: right;
@@ -50,24 +62,30 @@ ul li {
 }
 .bodyCompass h1{
     color: #C12D18;
-    margin-right: 2%;
-    font-size: 1.9em;
-    font-weight: 700;
+    margin-right:3%;
+    font-size: 3.4em;
+    font-weight: bolder;
+    margin-top: 0px!important;
+    margin-bottom: 0px!important;
 }
 .bodyCompass h2 {
     color: #C12D18;
-    margin-right: 2%;
-    font-size: 1.5em;
-    font-weight: 700;
+    margin-right:3%;
+    font-size: 2.4em;
+    font-weight: bolder;
+    margin-top: 0px!important;
+    margin-bottom: 0px!important;
 }
 .bodyCompass h3 {
     color: #C12D18;
-    margin-right: 2%;
-    font-size: 1.3em;
-    font-weight: 700;
+    margin-right:3%;
+    font-size: 1.7em;
+    font-weight: bolder;
+    margin-top: 0px!important;
+    margin-bottom: 0px!important;
 }
 .bodyCompass p {
-    margin-right: 2%;
+    margin-right:3%;
     display: block;
 }
 .descripitionFooter {
@@ -87,21 +105,30 @@ ul li {
 }
 .timeout{
     float: left;
-    width: 35%;
+    width: 33%;
     height: 100px;
 }
-.timeout h1 {
-    font-size: 1.6em;
+.timeout li h1{
+    font-size: 2.4em;
     font-weight: 700;
     color: #fff;
-    margin: 0;
+    margin: 0px 0px 0px 0px!important;
+    text-align: center;
 }
-.timeout p {
+.timeout li p{
     font-size: 1.0em;
-    font-weight: 700;
+    font-weight: 100;
     color: #fff;
-    margin: 0;
+    margin: 0!important;
+    text-align: center;
 }
+#application p{
+    margin-top: 25px!important;
+    margin-right: 4px!important;
+    text-align: right;
+    color: #fff;
+    font-weight: 700;
+} 
 .logout {
     float: left;
     background: #fff;
