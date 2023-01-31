@@ -108,7 +108,7 @@ const getLocation = () => {
         });
 }
    
-    let user = sessionStorage.getItem('user');
+  /*  let user = sessionStorage.getItem('user');
     let pass = sessionStorage.getItem('pass');
     if(!user || !pass){
         history.push("/content/reactapp/us/en/login/index");
@@ -120,7 +120,7 @@ const getLocation = () => {
                     break;
                 }
             }
-        }
+        }*/
     
     const itemEAMTitle = [  
                             titleOne, 
@@ -172,9 +172,9 @@ const getLocation = () => {
     },[localizacao.plus_code?.compound_code]);
     
     if(seconds === 0){
-        user = sessionStorage.removeItem('user');
-        pass = sessionStorage.removeItem('pass');
-        history.push('/content/reactapp/us/en/login/index');
+       // user = sessionStorage.removeItem('user');
+       // pass = sessionStorage.removeItem('pass');
+       // history.push('/content/reactapp/us/en/login/index');
     }
     return (
         <>
@@ -219,9 +219,15 @@ const getLocation = () => {
                         </li>
                     </ul>
                 </div>
-               
-                <Link to='/content/reactapp/us/en/login.html'><div class="logout">Acessar<br/> Busca</div></Link>
-                <Link to='/content/reactapp/us/en/login.html'><div class="search">Logout</div></Link>
+                <div class="desktop">
+                    <Link to='/content/reactapp/us/en/login/pesquisa'><div class="logout">Acessar<br/> Busca</div></Link>
+                    <Link to='/content/reactapp/us/en/login.html'><div class="search">Logout</div></Link>
+                </div>
+                <div class="mobil">
+                    <Link to='/content/reactapp/us/en/login/pesquisa'><div class="search">Logout</div></Link>
+                    <Link to='/content/reactapp/us/en/login.html'><div class="logout">Acessar Busca</div></Link>
+                </div>
+                
             </section>
         </div>
         </>

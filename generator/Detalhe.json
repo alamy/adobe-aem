@@ -1,0 +1,54 @@
+{
+  "project-settings": {
+    "code-owner": "React App",
+    "bundle-path": "../core/src/main/java",
+    "test-path": "../core/src/test/java",
+    "apps-path": "../ui.apps/src/main/content/jcr_root/apps",
+    "component-path": "reactapp",
+    "model-interface-pkg": "com.reactapp.core.models",
+    "model-impl-pkg": "com.reactapp.core.models.impl"
+  },
+  "name": "detalhe-compass",
+  "title": "DetalheCompass",
+  "group": "React App - Content",
+  "type": "components",
+  "options": {
+    "js": false,
+    "jstxt": false,
+    "css": false,
+    "csstxt": false,
+    "html": false,
+    "html-content": false,
+    "slingmodel": true,
+    "testclass": false,
+    "junit-major-version": 5,
+    "content-exporter": true,
+    "model-adaptables": [
+      "request"
+    ],
+    "generic-javadoc": false,
+    "properties": [
+      {
+        "field": "textoRepositorio",
+        "label": "Texto Repositório",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "textoRepositorio"
+      },
+      {
+        "field": "textoFavorito",
+        "label": "Texto Favoritos",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "textoFavorito"
+      },
+      {
+        "field": "textoDetalhes",
+        "label": "Texto do Detalhes",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "textoDetalhes"
+      }
+    ]
+  }
+}

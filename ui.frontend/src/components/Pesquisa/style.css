@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,200;1,300;1,400;1,700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+.pesquisa{
+    max-height: 1220px ;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(180deg, #33383D 0%, #1C1D20 100%);
+    font-family: 'Poppins'!important;
+}
+.bgCompassPesq{
+    max-width: 30%;
+    width: 30vw;
+    background: url('../FormCompass/img/bg.jpg') no-repeat;
+    background-size: cover;
+    top:0;
+    float: left;
+    display: block;
+    height: 100%;
+}
+.bgCompassPesq img{
+    width: 50%;
+    display: block;
+    margin: 20px auto;
+}
+.box-pesq {
+    width: 70%;
+    margin: 12% auto;
+}
+.form {
+    top:-20;
+    max-width: 70%;
+    width: 70vw;
+    float: left;
+    display: block;
+}
+.form h1 {
+    color: #fff;
+}
+.form p {
+    color:#fff;
+}
+.buscar{
+    background: linear-gradient(90deg, #FF2D04 0%, #C13216 100%);
+    border-radius: 50px;
+    width: 21%;
+    height: 45px;
+    color: #fff;
+    display: block;
+    float: left!important;
+    margin-left: 12px;
+    border:none;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 5px 5px 5px #000;
+    transition: 0.5s;
+}
+.buscar:visited{
+    box-shadow: none;
+    margin: 5px 0px 0 17px;
+}
+.buscar p{
+    float: left;
+    margin-left: 30%;
+}
+.buscar span{
+    float: left;
+    margin-top: 10px;
+    margin-left: 4%;
+}
+.input {
+    border:1px solid #fff;
+    width: 70%;
+    float: left;
+    border-radius: 50px;
+}
+.iputpesquisa {
+    width: 100%;
+    display: block;
+    border-radius: 20px;
+}
+.iputpesquisa:focus
+.iputpesquisa:active{
+    border:1px solid #fff!important;
+}
+.boxUser {
+    border: 1px solid #AAAAAA;
+    width: 80%;
+    margin: 10px auto;
+    float: none!important;
+    color: #fff;
+    height: 159px;
+    display: block;
+    border-radius: 10px;
+}
+.boxUser h3{
+    color: #fff;
+}
+
+.vermais {
+    float: left;
+}
+.perfil {
+    border-radius: 100%;
+    width: 93px;
+    height: 93px;
+    float: left;
+    margin-left: 35px;
+    margin-top: 37px;
+}
+.listaUsuarios {
+    height: 40vh;
+    max-height:450px;
+    display: block;
+    overflow-y: scroll;
+}
+
+.listaUsuarios::-webkit-scrollbar {
+    width: 12px;           
+  }
+  
+.listaUsuarios::-webkit-scrollbar-track {
+    background: rgb(44, 44, 44);       
+  }
+  
+.listaUsuarios::-webkit-scrollbar-thumb {
+    background-color: rgb(111, 111, 111);    
+    border-radius: 20px;     
+    border: 3px solid rgb(44, 44, 44);  
+  }
+address {
+    float: left;
+    width: 55%;
+    display: block;
+
+    padding-left: 20px;
+}
+  .vermais {
+    padding: 18px 0%;
+    gap: 10px;
+    width: 20%;
+    margin-right: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(90deg, #0487FF 0%, #1665C1 100%);
+    box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 45px;
+    right:0;
+    cursor: pointer;
+    float: right;
+    border: none;
+  }
+  .logo-pesquisa {
+    display: none;
+}
+
+.btn-desktop{
+    display: block;
+  }
+
+
+
+  @media (max-width: 600px){ 
+    
+    .pesquisa {
+        width: 100%;
+    }
+
+    .bgCompassPesq {
+        display: none;
+    }
+    .buscar p {
+        display: none;
+    }
+    .form {
+        max-width: 100%;
+        width: 100vw;
+    }
+    .input {
+        border:1px solid #fff;
+        width: 75%;
+        float: left;
+        border-radius: 50px;
+    }
+    .buscar {
+        width: 45px;
+        height: 45px;
+        padding-bottom: 10px;
+    }
+    .buscar span{
+        float: left;
+        margin-left: 11%;
+    }
+    .box-pesq {
+        width: 93%;
+    }
+    .listaUsuarios{
+        width: 100%;
+        overflow-x: none!important;
+        overflow-y: none;
+        margin: 12px 0 0 0;
+        padding: 0;
+        height: 96vh;
+        padding-top: 40px;
+    }
+    address {
+        height: 155px;
+        width: 45%;
+        overflow: hidden;
+    }
+    address  h3 {
+        margin: 0;
+        font-size: 0.9;
+    }
+    address p {
+        height: 70px;
+        text-overflow: inherit;
+        font-size: 0.7em;
+    }
+    .perfil {
+        border-radius: 100%;
+        width: 60px;
+        height: 60px;
+        margin-left: 13px;
+        margin-top: 47px;
+    }
+    .ulRepo li{
+        overflow: hidden;
+    }
+  }

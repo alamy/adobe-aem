@@ -46,6 +46,11 @@ ul li {
 .localidade {
     text-align: right;
 }
+.localidade h2 {
+    font-weight: 700;
+font-size: 48px;
+line-height: 72px;
+}
 .logo image {
     width: 50%;
     margin: 0 auto;
@@ -146,4 +151,55 @@ ul li {
     width: 7%;
     text-align: center;
     padding-top: 30px;
+}
+.desktop {
+    display: block;
+}
+.mobil {
+    display: none;
+}
+@media (max-width: 600px){ 
+    ul li {
+        width: 44%;
+        padding: 10px 5px;
+    }
+    .logoHome img {
+        width: 100%;
+        margin-top: 20px;
+    } 
+    .bodyHome{
+        background: url('uol-ball-transparent.png') -20% 80% no-repeat;
+        background-size: 100%;
+    }
+    .mobil {
+        display: block;
+    }
+    .desktop {
+        display: none;
+    }
+    .hora {
+        display: none;
+    }
+    .bodyCompass{
+        display: none!important;
+    }
+    .descripitionFooter {
+        display: none;
+    }
+    .timeout {
+        display: none;
+    }
+    .logout {
+        width: 69%;
+        padding-top: 31px;
+    }
+    .search {
+        width: 30%;
+    }
+    .localidade h2 {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 72px;
+        margin: 0px;
+    }
 }

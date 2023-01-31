@@ -96,8 +96,7 @@ const FormCompass = ({text, titulo, logoCompass}) => {
   return (
     <>
     <div class="LoginForm" alt="Aqui você vai fazer seu login" title='Aqui você vai fazer seu login'>
-      {x}
-      <div id="demo"></div>
+      <div class="demo"> <img src={logo} class="logo"  alt="Logo da Compass.uol" title='Logo da Compass.uol'/></div>
       <div class="s6 login-form">
         <h1>{title}</h1>
         <p>{texto}</p>

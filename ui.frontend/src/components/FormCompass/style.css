@@ -8,6 +8,12 @@
     height: 100%;
     top:0;
 }
+.demo {
+    display: none;
+}
+.formulario {
+    width: 100%;
+}
 .LoginForm {
     width: 100vw;
     display: block;
@@ -126,5 +132,32 @@ svg {
 @media (max-width: 600px){ 
     .laptop{
         display: none;
+    }
+    .s6{
+        width: 100%;
+        float: none;
+    }
+    .login-form {
+        width: 100%;
+        margin: 0px 0px;
+    }
+    .demo {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .login-form p{
+        margin-left: 5%;
+        margin-top: 0px;
+        width: 90%;
+    }
+    
+    .login-form h1{
+        margin-left: 5%;
+        margin-top: 2%;
+    }
+    .formulario{
+        width: 90%;
+        margin: 0 5%;
     }
 }
