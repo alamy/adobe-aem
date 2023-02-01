@@ -75,8 +75,7 @@ let mes = meses[DataAtual.getMonth()];;
 let ano = DataAtual.getFullYear();
 let [relogio, setRelogio] = useState("");
 var history = useHistory();
-//var [user, setUser] = useState();
-//var [pass, setPass] = useState();
+
 
 
   
@@ -108,7 +107,7 @@ const getLocation = () => {
         });
 }
    
-  /*  let user = sessionStorage.getItem('user');
+    let user = sessionStorage.getItem('user');
     let pass = sessionStorage.getItem('pass');
     if(!user || !pass){
         history.push("/content/reactapp/us/en/login/index");
@@ -120,7 +119,7 @@ const getLocation = () => {
                     break;
                 }
             }
-        }*/
+        }
     
     const itemEAMTitle = [  
                             titleOne, 
@@ -172,9 +171,9 @@ const getLocation = () => {
     },[localizacao.plus_code?.compound_code]);
     
     if(seconds === 0){
-       // user = sessionStorage.removeItem('user');
-       // pass = sessionStorage.removeItem('pass');
-       // history.push('/content/reactapp/us/en/login/index');
+        user = sessionStorage.removeItem('user');
+        pass = sessionStorage.removeItem('pass');
+        history.push('/content/reactapp/us/en/login/index');
     }
     return (
         <>
