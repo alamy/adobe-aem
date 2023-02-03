@@ -99,12 +99,14 @@ const getLocation = () => {
   function showPosition(position){
     lat =  position.coords.latitude;
     lon = position.coords.longitude;
-    GoogleApi
+
+    //RETIREI ESSA CHAMADA POIS TINHA MINHA CHAVE GOOGLE API DA CONTA PESSOAL.
+  /*  GoogleApi
         .get("json?latlng="+lat +","+ lon+"&key=")
         .then((response) => setLocalizacao(response?.data))
         .catch((err) => {
             console.log("ops! Erro na api google" + err)
-        });
+        });*/
 }
    
     let user = sessionStorage.getItem('user');
@@ -160,14 +162,14 @@ const getLocation = () => {
 
     }
    
-    var [estado, setEstado] = useState();
+  //  var [estado, setEstado] = useState();
 
     let [seconds, setSeconds] = useState(600);
     useEffect(() => {
             const interval = setInterval(() => {
                 setSeconds(seconds => seconds - 1);
             }, 1001);
-            setEstado(localizacao.plus_code?.compound_code.substr(8));
+         //   setEstado(localizacao.plus_code?.compound_code.substr(8));
     },[localizacao.plus_code?.compound_code]);
     
     if(seconds === 0){
@@ -187,7 +189,7 @@ const getLocation = () => {
                     <p> {semana}, {dia} de {mes} de {ano}</p>
                 </li>
                 <li class="localidade">
-                    <p>{estado} </p>
+                    <p> Recife PE</p>
                     <h2><span class="material-symbols-outlined">wb_sunny</span>  29º</h2>
                 </li>
             </ul>
