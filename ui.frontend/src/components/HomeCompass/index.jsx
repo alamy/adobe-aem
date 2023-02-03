@@ -100,7 +100,7 @@ const getLocation = () => {
     lat =  position.coords.latitude;
     lon = position.coords.longitude;
     GoogleApi
-        .get("json?latlng="+lat +","+ lon+"&key=AIzaSyB_8fXTTUr2koqUklfGRF8K4iGfKkpq_Rs")
+        .get("json?latlng="+lat +","+ lon+"&key=")
         .then((response) => setLocalizacao(response?.data))
         .catch((err) => {
             console.log("ops! Erro na api google" + err)
