@@ -188,7 +188,7 @@ const getLocation = () => {
                 </li>
                 <li class="localidade">
                     <p>{estado} </p>
-                    <h2><span class="material-symbols-outlined">wb_sunny</span>  32º</h2>
+                    <h2><span class="material-symbols-outlined">wb_sunny</span>  29º</h2>
                 </li>
             </ul>
                 

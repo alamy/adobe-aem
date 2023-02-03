@@ -1,0 +1,38 @@
+.storybook-logo {
+ width: 100%;
+ height: 30vh;
+ display: block;
+ background: url('assets/img/logo-white.png') no-repeat;
+ background-size: 100%;
+}
+.storybook-logo--primary {
+  width: 100%;
+  height: 30vh;
+  background: url('assets/img/logo-white.png') no-repeat;
+  background-color: black;
+  background-size: 100%;
+}
+.storybook-logo--secondary {
+  width: 100%;
+  height: 30vh;
+  background: url('assets/img/logo-black.png') no-repeat;
+  background-size: 100%;
+
+}
+.storybook-logo--little {
+  width: 10%;
+  height: 30vh;
+  font-size: 12px;
+
+}
+.storybook-logo--medium {
+  width: 30%;
+  height: 30vh;
+  font-size: 12px;
+
+}
+.storybook-logo--big {
+  width: 50%;
+  height: 50vh;
+
+}

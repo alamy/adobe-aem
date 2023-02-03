@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,200;1,300;1,400;1,700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0');
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.storybook-footer  {
+  height: 100px;
+  bottom: 0px;
+  width: 100vw;
+  max-width: 100%;
+  position: absolute;
+  background: linear-gradient(90.16deg, #33383D 0%, #1C1D20 100%);
+}
+.descripitionFooter {
+  width: 30%;
+  height: 60px;
+  margin-left: 18%;
+  padding-right: 2%;
+  font-weight: 100;
+  margin-top: 20px;
+  border-right: 1px solid #fff;
+  float: left;
+}
+.descripitionFooter p {
+  color:#fff;
+  font-size: 0.8em;
+  margin-top: 15px;
+}
+.storybook-footer--desktop {
+  width: 100vw;
+  max-width: 100%;
+}
+
+.storybook-footer--desktop{
+  width: 100vw;
+  max-width: 600px;
+}
+
+.timeout{
+  float: left;
+  width: 33%;
+  height: 100px;
+}
+.timeout li h1{
+  font-size: 2.4em;
+  font-weight: 700;
+  color: #fff;
+  margin: 0px 0px 0px 0px!important;
+  text-align: center;
+}
+.timeout li p{
+  font-size: 1.0em;
+  font-weight: 100;
+  color: #fff;
+  margin: 0!important;
+  text-align: center;
+}
+
+.storybook-footer--desktop .logout {
+  float: left;
+  background: #fff;
+  border:1px solid #fff;
+  height: 80px;
+  width: 7%;
+  color:#C13216;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.storybook-footer--desktop .search {
+  color: #fff;
+  float: left;
+  height: 70px;
+  width: 7%;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.storybook-footer--mobil .logout {
+  width: 69%;
+  padding-top: 31px;
+  float: left;
+  background: #fff;
+  border:1px solid #fff;
+  height: 80px;
+  color:#C13216;
+  text-align: center;
+}
+
+.storybook-footer--mobil .search {
+  width: 30%;
+  color: #fff;
+  float: left;
+  height: 70px;
+  text-align: center;
+}
+
+.storybook-footer--mobil .mobil {
+  display: block;
+}
+.storybook-footer--mobil .desktop {
+  display: none;
+}
+.storybook-footer--mobil .hora {
+  display: none;
+}
+.storybook-footer--mobil .bodyCompass{
+  display: none!important;
+}
+.storybook-footer--mobil .descripitionFooter {
+  display: none;
+}
+.storybook-footer--mobil .timeout {
+  display: none;
+}

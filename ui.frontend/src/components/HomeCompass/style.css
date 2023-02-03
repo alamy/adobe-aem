@@ -3,7 +3,7 @@
     display: block;
     width: 100%;
     height: 100vh;
-    max-height: 1010px;
+    max-height: 1212px;
     top:0;
     position: absolute;
     margin: 0;
@@ -49,7 +49,7 @@ ul li {
 .localidade h2 {
     font-weight: 700;
 font-size: 48px;
-line-height: 72px;
+line-height: 0px;
 }
 .logo image {
     width: 50%;
@@ -68,7 +68,7 @@ line-height: 72px;
 .bodyCompass h1{
     color: #C12D18;
     margin-right:3%;
-    font-size: 3.4em;
+    font-size: 4.4em;
     font-weight: bolder;
     margin-top: 0px!important;
     margin-bottom: 0px!important;
@@ -76,7 +76,7 @@ line-height: 72px;
 .bodyCompass h2 {
     color: #C12D18;
     margin-right:3%;
-    font-size: 2.4em;
+    font-size: 3.4em;
     font-weight: bolder;
     margin-top: 0px!important;
     margin-bottom: 0px!important;
@@ -84,7 +84,7 @@ line-height: 72px;
 .bodyCompass h3 {
     color: #C12D18;
     margin-right:3%;
-    font-size: 1.7em;
+    font-size: 2.7em;
     font-weight: bolder;
     margin-top: 0px!important;
     margin-bottom: 0px!important;
@@ -92,6 +92,7 @@ line-height: 72px;
 .bodyCompass p {
     margin-right:3%;
     display: block;
+    font-size: 1.6em;
 }
 .descripitionFooter {
     width: 30%;
@@ -199,7 +200,7 @@ line-height: 72px;
     .localidade h2 {
         font-size: 48px;
         font-weight: 700;
-        line-height: 72px;
+        line-height: 0px;
         margin: 0px;
     }
 }
